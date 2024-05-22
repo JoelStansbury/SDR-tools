@@ -1,0 +1,15 @@
+name: dev
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python
+  - pip
+  - jupyterlab
+  - matplotlib
+  - numpy
+  - scipy
+  - pip:
+    - pyrtlsdr
+    - pyrtlsdrlib

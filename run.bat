@@ -1,0 +1,1 @@
+wsl --exec bash scripts/linux/run.sh

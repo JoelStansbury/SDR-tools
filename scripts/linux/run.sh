@@ -1,0 +1,1 @@
+rtl_fm -f 90.1M -s 300000 -r 22050 -M fm | sox -t raw -e signed-integer -b 16 -c 1 -r 22050 - foo.wav
