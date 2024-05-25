@@ -3,7 +3,7 @@
 ### Windows
 > The driver stuff seemed dangerous, so I didn't investigate this at all. But I think the value of RTLSharp is compelling, so may come back to this at a later date.
 ### Windows + WSL
-> All of this is done by the `setup.bat` file
+> Most of this is done by the `setup.bat` file, but you'll need to do the `usbipd` stuff (6,7, and 8) manually until we figure out how to automate step 6
 1. Update wsl to version 2
    ```powershell
    wsl --update
