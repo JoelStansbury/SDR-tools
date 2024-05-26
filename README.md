@@ -49,17 +49,11 @@
 9. Now, back in the Ubuntu terminal, you need to install the software required to recieve USB over IP data
     ```bash
     sudo apt update
-    sudo apt install linux-tools-5.4.0-77-generic hwdata
+    sudo apt install linux-tools-5.4.0-77-generic hwdata rtl-sdr sox
     sudo update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/5.4.0-77-generic/usbip 20
-    ```
-10. Install the rtlsdr software required to read the signal from the usb antenna
-    ```bash
-    sudo apt update
-    sudo apt install rtl-sdr sox
     ```
 ### Linux
 ```bash
 sudo apt update
-sudo apt install linux-tools-5.4.0-77-generic hwdata rtl-sdr sox
-sudo update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/5.4.0-77-generic/usbip 20
+sudo apt install rtl-sdr sox
 ```
