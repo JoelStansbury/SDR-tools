@@ -52,6 +52,10 @@
     sudo apt install linux-tools-5.4.0-77-generic hwdata rtl-sdr sox
     sudo update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/5.4.0-77-generic/usbip 20
     ```
+
+> Your system should now have a wsl virtual machine capable of recieving data from the SDR device. `usbipd` will detach the antenna from the vm after a restart, or if all shells to the vm are terminated, so you will occassionally need to re-run `step 8`.
+
+byte-data from the rtl_sdr commands can be read from windows by piping to and reading from stdio via `wsl --exec ...` (see the notebook for an example of this)
 ### Linux
 ```bash
 sudo apt update
