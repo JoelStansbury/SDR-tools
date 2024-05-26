@@ -63,28 +63,3 @@ sudo apt update
 sudo apt install linux-tools-5.4.0-77-generic hwdata rtl-sdr sox
 sudo update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/5.4.0-77-generic/usbip 20
 ```
-
-
-
-## Using the Python Notebooks
-Since the SDR only works in linux (at least... that's the position that I've taken), the python env that runs the notebook must be created in linux.
-
-To use it, you will need to install mambaforge. Once you have the base environment working, go ahead and create the env for this repo.
-```bash
-wsl
-cd PATH/TO/SDR-tools
-wget https://github.com/conda-forge/miniforge/releases/download/24.1.2-0/Mambaforge-24.1.2-0-Linux-x86_64.sh
-bash Mambaforge-24.1.2-0-Linux-x86_64.sh
-```
-Follow the install guide and (unless you understand the repurcussions of answering `no`) make sure to answer `yes` when it asks to automatically activate the base environment.
-Then... exit the vm and re-enter it to enter a shell with the base env activated.
-```
-wsl
-cd PATH/TO/SDR-tools
-mamba update conda mamba
-mamba install micromamba
-mkdir envs
-micromamba env create -f environment.yml -p envs/dev_linux
-```
-
-Activate the env using
