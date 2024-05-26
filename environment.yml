@@ -10,6 +10,7 @@ dependencies:
   - matplotlib
   - numpy
   - scipy
+  - python-sounddevice
   - pip:
     - pyrtlsdr
     - pyrtlsdrlib

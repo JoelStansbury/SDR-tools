@@ -1,0 +1,4 @@
+[project]
+name = "sdr"
+version = "0"
+license = {file = "LICENSE"}
